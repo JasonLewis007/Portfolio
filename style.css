@@ -74,6 +74,16 @@ header nav ul li a:hover {
 .hero img {
   height: 300px;
 }
+.subtitle-container{
+  display: flex;
+  align-content: space-between;
+  align-content: flex-end;
+  text-align: center;
+  color:black;
+  background-color: var(--secondary);
+  border-color:var(--primary) ;
+  padding:5px;
+}
 
 .title {
   border-right: 5px solid;
@@ -89,7 +99,7 @@ header nav ul li a:hover {
 }
 
 
-/* about me section styling start */
+/* about me css */
 .about-me {
   display: flex;
   justify-content: space-between;
@@ -99,8 +109,8 @@ header nav ul li a:hover {
 
 .about-me p {
   font-size: 18px;
-  padding: 0 30px;
-  line-height: 1.6;
+  padding: 0 20px;
+  line-height: 1.5;
   width: 90%;
 }
 /* my work css */
@@ -171,13 +181,12 @@ header nav ul li a:hover {
 }
 
 .project-label {
-  /*background-color: var(--secondary);*/
-  background-color:whitesmoke;
+  background-color:aliceblue;
   color: black;
   padding: 15px;
   position:absolute;
 }
-/* contact me section styling start */
+/* contact css */
 footer {
   display: flex;
   justify-content: space-between;
@@ -221,7 +230,7 @@ footer ul li a {
 
 footer ul li a:hover {
   background:var(--primary);
-  color: red;
+  color:aliceblue;
 }
 footer{
   background-color: var(--primary);
@@ -238,8 +247,8 @@ footer{
   }
 
   .about-me p {
-      font-size: 10px;
-      line-height: 1.6;
+      font-size: 20px;
+      line-height: 1.5;
   }
 }
 
@@ -263,7 +272,7 @@ footer{
   }
 
   .title {
-      border-bottom: 5px solid var(--pop);
+      border-bottom: 5px solid;
       border-right: none;
       text-align: center;
       min-width: 100%;
