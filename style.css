@@ -74,14 +74,12 @@ header nav ul li a:hover {
 .hero img {
   height: 300px;
 }
-.subtitle-container{
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
+.subtitle-label{
+  position:absolute;
   color:black;
   background-color: var(--secondary);
   border-color:var(--primary) ;
-  padding: 20px;
+  padding: 25px;
 }
 
 .title {
@@ -108,9 +106,10 @@ header nav ul li a:hover {
 
 .about-me p {
   font-size: 18px;
-  padding: 0 20px;
+  padding: 0 40px;
   line-height: 1.5;
-  width: 90%;
+  width: 100%;
+  margin-left:20px ;
 }
 /* my work css */
 .my-work {
@@ -148,7 +147,7 @@ header nav ul li a:hover {
   text-decoration: none;
   background-size: cover;
   background-position: center;
-  opacity: 0.5;
+  opacity: 1.0;
 }
 
 .project:hover {
@@ -182,7 +181,7 @@ header nav ul li a:hover {
 .project-label {
   background-color:aliceblue;
   color: black;
-  padding: 15px;
+  padding: 10px;
   position:absolute;
 }
 /* contact css */
@@ -236,7 +235,7 @@ footer{
   color: var(--secondary);
 }
 
-/* MEDIA QUERY FOR TABLET SCREENS AND SMALLER */
+/* MEDIA QUERY-responsiveness */
 @media screen and (max-width: 768px) {
 
 
@@ -251,7 +250,6 @@ footer{
   }
 }
 
-/* MEDIA QUERY FOR MOBILE PHONE SCREENS AND SMALLER */
 @media screen and (max-width: 575px) {
   header {
       justify-content: center;
