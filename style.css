@@ -25,7 +25,7 @@ h1{
   align-items: center;
   flex-wrap: wrap;
   padding: 5px;
-  background-color: aquamarine;
+  background-color:aqua;
   width:fit-content;
   height:50px;
   color: black;
@@ -33,7 +33,7 @@ h1{
 
 nav ul{
   display: flex;
-  background-color: rgb(2, 2, 71);
+  background-color: rgb(2, 2, 71) ;
   inline-size: 200;
   flex-direction:row;
   justify-content:space-between;
@@ -43,7 +43,7 @@ nav ul{
 }
 
  nav li{
-  color: aquamarine;
+  color:aqua;
   font-weight: bold;
 }
 .hero{
@@ -53,7 +53,107 @@ display: flex;
 align-items: center;
 justify-content: space-around;
 }
+/*portfolio image styling*/
+.portfolio{
+  width: 100%;
+  height:400px;
+}
+.container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color:aqua;
+  color:black;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/*about-me section styling*/
+.about-me{
+  display:flex;
+  justify-content:center;
+  align-content:end ;
+  align-items:stretch;
+  padding-top:30px;
 
+}
+.about-me p{
+  font-size:14pt;
+  padding: 0 20px;
+  line-height: 1.0;
+  width:90%;
+  padding-left:50%;
+  padding-top:30px;
+  
+}
+.title{
+  display:flex;
+  justify-content:left;
+  align-items:stretch;
+  padding-top:30px;
+  
+}
+.container1{
+  position: relative;
+  width: 100%;
+  height: 600px;
+}
+.bottom-left{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color:aqua;
+    color:black;
+    padding-left: 20px;
+    padding-right: 20px;
+}
 
+.inspect{
+  display:flex;
+  justify-content:right;
+  align-content: flex-end;
+  align-items: end;
+  width: 40%;
+  height: 400px;
+}
+.small-pics{
+  width: 25%;
+  height: 200px;
 
-
+}
+.bottom-left{
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color:aqua;
+  color:black;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+footer
+{
+  background-color: rgb(2, 2, 71);
+  color:aqua;
+  width:100%;
+  height:fit-content;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+footer nav ul{
+  display: flex;
+  background-color: rgb(2, 2, 71) ;
+  inline-size: 200;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+  width:500px;
+  font-size: large;
+}
+ 
