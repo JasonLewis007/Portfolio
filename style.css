@@ -28,7 +28,6 @@ header {
   padding: 30px;
 }
 header h1 {
-  color: var(--pop);
   font-size: 30px;
   font-weight: bold;
   background-color: var(--secondary);
@@ -64,7 +63,7 @@ header nav ul li a:hover {
 /* css */
 .hero {
   background-image:url(Portfolio.jpg);
-  height: 600px;
+  height: 500px;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -73,11 +72,11 @@ header nav ul li a:hover {
 }
 
 .hero img {
-  height: 400px;
+  height: 300px;
 }
 
 .title {
-  border-right: 5px solid var(--pop);
+  border-right: 5px solid;
   min-height: 100%;
   text-align: right;
   padding-right: 40px;
@@ -173,9 +172,10 @@ header nav ul li a:hover {
 
 .project-label {
   /*background-color: var(--secondary);*/
-  background-color: var(--secondary);
+  background-color:whitesmoke;
   color: black;
   padding: 15px;
+  position:absolute;
 }
 /* contact me section styling start */
 footer {
