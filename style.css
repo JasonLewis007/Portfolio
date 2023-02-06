@@ -1,209 +1,319 @@
-*{
-  margin:0;
-  padding:0;
+
+/* color variables*/
+:root {
+  --primary:rgb(4, 4, 63);
+  --secondary:aqua;
+}
+
+/* remove default CSS styling */
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
-body{
-  font-family: sans-serif;
+
+/* css for body styling */
+body {
+  font-family:sans-serif;
+  color: black;
+  background-color: var(--secondary);
 }
-.header{
-  background-color: rgb(2, 2, 71);
-  color:aqua;
-  width:100%;
-  height:fit-content;
+
+/* header css */
+header {
+  background-color: var(--primary);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 30px;
-  
-  
+}
+header h1 {
+  color: var(--pop);
+  font-size: 30px;
+  font-weight: bold;
+  background-color: var(--secondary);
+  padding: 20px;
 }
 
-h1{
-  display:flex;
-  justify-content:flex-start;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 5px;
-  background-color:aqua;
-  width:fit-content;
-  height:50px;
-  color: black;
+header a {
+  color: var(--secondary);
 }
 
-nav ul{
+header nav ul {
   display: flex;
-  background-color: rgb(2, 2, 71) ;
-  inline-size: 200;
-  flex-direction:row;
-  justify-content:space-between;
-  align-items:center;
-  width:500px;
-  font-size: large; 
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
- nav li{
-  color:aqua;
+header nav {
+  margin: 15px;
+}
+
+header nav ul li a {
+  padding: 10px;
+  font-size: 20px;
+  margin: 20px 20px 0 0;
   font-weight: bold;
 }
-.hero{
-background-size: cover;
-background-position: center;
-display: flex;
-align-items: center;
-justify-content: space-around;
-}
-/*portfolio image styling*/
-.portfolio{
-  width: 100%;
-  height:400px;
-}
-.container {
-  position: relative;
-  width: 100%;
-  height: 400px;
-}
-/* Bottom right text */
-.bottom-right {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  background-color:aqua;
-  color:black;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-/*about-me section styling*/
-.about-me{
-  display:flex;
-  justify-content:center;
-  align-content:end ;
-  align-items:stretch;
-  padding-top:30px;
 
-}
-.about-me p{
-  font-size:14pt;
-  padding: 0 20px;
-  line-height: 1.0;
-  width:90%;
-  padding-left:40%;
-  padding-top:30px;
-  
-}
-.title{
-  display:flex;
-  justify-content:space-between;
-  align-items:end;
-  flex-direction: column;
-  width:40%;
-  padding-top: 30px;
-  border-right: 5px;
-  border-color: aqua;
-  
-}
-.my-work-title{
-  display:flex;
-  justify-content:space-between;
-  align-items:end;
-  align-content: end;
-  flex-direction: column;
-  width:40%;
-  padding-top: 30px;
-  border-right: 5px;
-  border-color: aqua;
-}
-.my-work{
-  display: flex;
-  align-items:flex-start;
-  align-content: end;
-  justify-content: space-between;
-  padding-top: 50px;
-  flex-wrap: wrap;
-}
-.flex-pic{
-  display:flex;
-  padding-top: 50px;
-  align-items: center;
-  align-content: center;
-  justify-content: space-between;
-  position: relative;
-  text-align: left;
-  padding-right: 100px;
-}
-.inspect{
-  display: flex;
-  align-items: center;
-  align-content: end;
-  justify-content: space-between;
-  height:400px;
-  width:100%
-}
-.bottom-left{
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  background-color:aqua;
-  padding: 5px;
+header nav ul li a:hover {
+  color:aliceblue;
+  border-radius: 20px;
 }
 
-/*
-.container1{
-  position: relative;
-  width: 100%;
+/* css */
+.hero {
+  background-image:url(Portfolio.jpg);
   height: 600px;
-}
-.bottom-left{
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    background-color:aqua;
-    color:black;
-    padding-left: 20px;
-    padding-right: 20px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
-.inspect{
-  display:flex;
-  justify-content:right;
-  align-content: flex-end;
-  align-items: end;
-  width: 40%;
+.hero img {
   height: 400px;
 }
-.small-pics{
-  width: 25%;
-  height: 200px;
 
+.title {
+  border-right: 5px solid var(--pop);
+  min-height: 100%;
+  text-align: right;
+  padding-right: 40px;
+  min-width: 20%;
+  max-width: 20%;
 }
-.bottom-left{
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  background-color:aqua;
+
+.title h2 {
+  font-size: 30px;
+}
+
+
+/* about me section styling start */
+.about-me {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding-top: 30px;
+}
+
+.about-me p {
+  font-size: 18px;
+  padding: 0 30px;
+  line-height: 1.6;
+  width: 90%;
+}
+/* my work css */
+.my-work {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  background-color:var(--secondary);
+}
+
+.my-work h2 {
   color:black;
-  padding-left: 20px;
-  padding-right: 20px;
 }
-footer
-{
-  background-color: rgb(2, 2, 71);
-  color:aqua;
-  width:100%;
-  height:fit-content;
+
+.projects-grid-wrapper {
+  width: 80%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+.projects-grid {
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.project {
+  border: solid;
+  color: black;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-decoration: none;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+}
+
+.project:hover {
+  opacity: 1.0;
+}
+
+.project-one {
+  grid-column: 1/3;
+  grid-row: span 2;
+  background-image: url("artificial-intelligence.jpg");
+}
+
+.project-two {
+  background-image: url("black-blue.jpg");
+  background-position: 50% 15%;
+}
+
+.project-three {
+  background-image: url("fountain-water.jpg");
+  background-position: 60% 50%;
+}
+
+.project-four {
+  background-image: url("html-pic.jpg");
+}
+
+.project-five {
+  background-image: url("inspect-project.jpeg");
+}
+
+.project-label {
+  /*background-color: var(--secondary);*/
+  background-color: var(--secondary);
+  color: black;
+  padding: 15px;
+}
+/* contact me section styling start */
+footer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 30px;
+  padding-top: 15px;
 }
-footer nav ul{
+
+.content-wrapper {
+  width: 80%;
   display: flex;
-  background-color: rgb(2, 2, 71) ;
-  inline-size: 200;
-  flex-direction:row;
-  justify-content:space-between;
-  align-items:center;
-  width:500px;
-  font-size: large;
+  justify-content: center;
+  align-items: center;
 }
+
+#contact-list {
+  width: 60%;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content:center;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+footer ul li {
+  color: var(--secondary);
+  font-weight: bold;
+
+}
+
+footer ul li a {
  
+  color:var(--secondary);
+  padding: 10px;
+  font-weight: bold;
+}
+
+footer ul li a:hover {
+  background:var(--primary);
+  color: red;
+}
+footer{
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+
+/* MEDIA QUERY FOR TABLET SCREENS AND SMALLER */
+@media screen and (max-width: 768px) {
+
+
+
+  .title h2 {
+      font-size: 35px;
+  }
+
+  .about-me p {
+      font-size: 10px;
+      line-height: 1.6;
+  }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONE SCREENS AND SMALLER */
+@media screen and (max-width: 575px) {
+  header {
+      justify-content: center;
+      padding: 20px;
+  }
+
+  header nav ul {
+      min-height: 80px;
+  }
+
+  .hero {
+      flex-direction: column;
+  }
+
+  .about-me {
+      flex-direction: column;
+  }
+
+  .title {
+      border-bottom: 5px solid var(--pop);
+      border-right: none;
+      text-align: center;
+      min-width: 100%;
+      max-width: 100%;
+      padding: 0;
+  }
+
+  .about-me p {
+      font-size: 16px;
+      line-height: 1.6;
+      width: 100%;
+      padding: 15px;
+  }
+
+  .my-work {
+      flex-direction: column;
+      padding: 30px 0;
+  }
+
+  .projects-grid-wrapper {
+      width: 100%;
+      padding: 10px;
+  }
+  
+  .projects-grid {
+      width: 80%;
+  }
+
+  footer {
+      flex-direction: column;
+  }
+
+  footer ul {
+      flex-direction: column;
+  }
+
+  .content-wrapper {
+      width: 100%;
+  }
+
+  footer ul li {
+      padding: 10px;
+      text-align: center;
+  }
+  
+}
+
+
+
+
+
+
+

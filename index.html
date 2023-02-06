@@ -1,137 +1,116 @@
 <!DOCTYPE html>
-<html lan="en-us">
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Jason Lewis Portfolio</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device=width, initial scale=1.0" />
-    <link rel="stylesheet" href="style.css">
-    <title>Jason Portfolio</title>
-</head>
-
-<body>
-    <header>
-        <div class="header">
-            <h1>Jason Lewis Portfolio</h1>
+    <body>
+        <!-- header and nav section start -->
+        <header>
+            <div><h1>Jason Lewis Portfolio</h1></div>
             <nav>
                 <ul>
                     <li>
                         <a href="#about-me">About Me</a>
                     </li>
                     <li>
-                        <a href="#work">Work</a>
+                        <a href="#my-work">My Work</a>
                     </li>
                     <li>
                         <a href="#contact-me">Contact Me</a>
                     </li>
                     <li>
-                        <a href="#resume">Resume</a>
+                        <a href="#">My Resume</a>
                     </li>
                 </ul>
             </nav>
-    </header>
-    </div>
-    <!--hero image section-->
-    <section class="hero">
-    
-    <div class="container">
-        <img src="Portfolio.jpg" class="portfolio" alt="Light Blue Lines against a dark blue background">
-        <div class="bottom-right"> 
-            <h2>Coding is Awesome!</h2>
-        </div>
-    </div>
-    </section>
-    <section id="about-me" class="about-me">
-        <div class="title">
-            <h2>About Me</h2>
-        </div>
-        <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere blanditiis delectus architecto
-                 ipsum quis expedita commodi quia provident odio, voluptatibus ipsam aspernatur. Itaque, eos. Deserunt tenetur sed
-                cum  qui reprehenderit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde nam esse beatae, amet tempora 
-                sit expedita cumque iure! Dolores ratione laboriosam nisi pariatur necessitatibus. Recusandae dignissimos consequatur 
-                hic facere cupiditate.</p>
-        </div>
-    </section>
-    <section class="my-work">
-        <div class="my-work-title">
-            <h2>My Work</h2>
-        </div>
-        <div class="flex-pic">
-            <img src="inspect-project.jpeg" class="inspect" alt="Inspect Project">
-            <div class="bottom-left">
-                <h3>Project 1</h3>
-                <p>Coming soon!</p>
-            </div>
-        </div>
+        </header>
 
-       
-
-    </section>
-   <!-- <section id="my-work" class="my-work">
-        <div class="title">
-            <h2>My Work</h2>
+        <!-- hero image section start -->
+        <section class="hero">
+            <div class="subtitle">
+                <h2 class="bottom-left">Coding is Awesome!</h2>
             </div>
-            <div class="picture">
-                <div class="container1">
-                    <img src="inspect-project.jpeg" class="inspect" alt="Inspect Project">
-                    <div class="bottom-left">
-                        <h3>Project 1</h3>
-                        <p>Coming soon!</p>
-                    </div>-->
-  
-                 <!--<div class="container2">
-                    <img src="html-pic.jpg" class="small-pics" alt="html picture">
-                    <div class="bottom-left">
-                        <h3>Project 2</h3>
-                        <p>Coming soon!</p>
-                    </div>
-                    <div class="container3"></div>
-                    <img src="fountain-water.jpg" class="small-pics" alt="fountain water picture">
-                    <div class="bottom-left">
-                        <h3>Project 3</h3>
-                        <p>Coming soon!</p>
-                    </div>
-                    <div class="container4"></div>
-                    <img src="black-blue.jpg" class="small-pics"alt="Black and blue picture">
-                    <div class="bottom-left">
-                        <h3>Project 4</h3>
-                        <p>Coming soon!</p>
-                    </div>
-                    <div class="container5"></div>
-                    <img src="artificial-intelligence.jpg" class="small-pics" alt="artificial intelligence">
-                    <div class="bottom-left">
-                        <h3>Project 5</h3>
-                        <p>coming soon!</p>
-                    </div>
+        </section>
+
+        <!-- about me section start -->
+        <section id="about-me" class="about-me">
+            <div class="title">
+                <h2>About Me</h2>
+            </div>
+            
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eleifend enim at eros finibus luctus. Integer dapibus ex consequat risus pulvinar cursus. Vivamus sit amet mauris congue, tincidunt massa lacinia, varius purus. Curabitur tincidunt fringilla hendrerit. Morbi eleifend purus sed nunc laoreet sollicitudin. Aenean convallis hendrerit condimentum. Maecenas semper, sem quis iaculis gravida, leo turpis ullamcorper lectus, quis placerat quam neque in arcu. Ut interdum odio sed eros ornare ultricies. Sed imperdiet non mi ac eleifend. In pretium, risus quis feugiat commodo, lacus ex pulvinar libero, non rutrum nibh tortor et magna.
+                 <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt nam, voluptate voluptatum dolore, doloribus eos deleniti cum asperiores in architecto quidem ad assumenda, possimus inventore neque! Pariatur facere obcaecati animi.
+                </p>
+            </div>
+        </section>
+
+        <!-- my work section start -->
+        <section id="my-work" class="my-work">
+            <div class="title"><h2>My Work</h2></div>
+            <div class = "projects-grid-wrapper">
+                <div class="projects-grid">
+
+                    <a href="#" class="project-one">
+                        <div class="project-label">
+                            <h3>Project 1</h3>
+                            <p>Coming Soon!</p>
+                        </div>
+                    </a>
+                    <a href="#"  class="project-two">
+                        <div class="project-label">
+                            <h3>Project 2</h3>
+                            <p>Coming Soon!</p>
+                        </div>
+                    </a>
+                    <a href="#"  class="project-three">
+                        <div class="project-label">
+                            <h3>Project 3</h3>
+                            <p>Coming Soon!</p>
+                        </div>
+                    </a>
+                    <a href="#" class="project-four">
+                        <div class="project-label">
+                            <h3>Project 4</h3>
+                            <p>Coming Soon!</p>
+                        </div>
+                    </a>
+                    <a href="#" target="_blank"  class="project-five">
+                        <div class="project-label">
+                            <h3>Project 5</h3>
+                            <p>Coming Soon!</p>
+                        </div>
+                    </a>
                 </div>
-            </div> 
-        </div>
-    </section>-->
-    <!--Contact Me-->
-    <footer id="contact me">
-<div class=><h2>Contact me</h2></div>
-<div class="footer-wrapper">
-    <div id="contact-list">
-        <ul>
-            <li>
-                <a href="704-962-4259">704-962-4259</a>
-            </li>
-            <li>
-                <a href="mail to:jasonlewis0000@gmail.com">Email</a>
-            </li>
-            <li>
-                <a href="https://github.com/jasonlewis007">GitHub</a>
-            </li>
-            <li>
-                <a href="www.linkedin.com/in/jason-lewis/">LinkedIn</a>
-            </li>
+            </div>
+        </section>
 
-        </ul>
-    </div>
-</div>
-    </footer>
-
-
-</body>
-
+        <!-- contact info section -->
+        <footer id="contact-me">
+            <div class="title"><h2>Contact Me</h2></div>
+            <div class="content-wrapper">
+                <div id="contact-list">
+                    <ul>
+                        <li>
+                            <p>(704) 962-4259</p>
+                        </li>
+                        <li>
+                            <a href="mailto:jasonlewis0000@gmail.com">Email</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/jasonlewis007">GitHub</a>
+                        </li>
+                        <li>
+                            <a href="#"></a>LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
