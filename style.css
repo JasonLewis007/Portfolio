@@ -87,17 +87,67 @@ justify-content: space-around;
   padding: 0 20px;
   line-height: 1.0;
   width:90%;
-  padding-left:50%;
+  padding-left:40%;
   padding-top:30px;
   
 }
 .title{
   display:flex;
-  justify-content:left;
-  align-items:stretch;
-  padding-top:30px;
+  justify-content:space-between;
+  align-items:end;
+  flex-direction: column;
+  width:40%;
+  padding-top: 30px;
+  border-right: 5px;
+  border-color: aqua;
   
 }
+.my-work-title{
+  display:flex;
+  justify-content:space-between;
+  align-items:end;
+  align-content: end;
+  flex-direction: column;
+  width:40%;
+  padding-top: 30px;
+  border-right: 5px;
+  border-color: aqua;
+}
+.my-work{
+  display: flex;
+  align-items:flex-start;
+  align-content: end;
+  justify-content: space-between;
+  padding-top: 50px;
+  flex-wrap: wrap;
+}
+.flex-pic{
+  display:flex;
+  padding-top: 50px;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  position: relative;
+  text-align: left;
+  padding-right: 100px;
+}
+.inspect{
+  display: flex;
+  align-items: center;
+  align-content: end;
+  justify-content: space-between;
+  height:400px;
+  width:100%
+}
+.bottom-left{
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color:aqua;
+  padding: 5px;
+}
+
+/*
 .container1{
   position: relative;
   width: 100%;
