@@ -69,6 +69,8 @@ header nav ul li a:hover {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  position: relative;
+  padding:20px;
 }
 
 .hero img {
@@ -80,6 +82,10 @@ header nav ul li a:hover {
   background-color: var(--secondary);
   border-color:var(--primary) ;
   padding: 25px;
+  bottom: 0;
+  right:0;
+  margin: 30px;
+  
 }
 
 .title {
